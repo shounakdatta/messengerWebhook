@@ -7,15 +7,15 @@ if($method == "POST") {
     $requestBody = file_get_contents('php://input');
     $json = json_decode($requestBody);
     
-    $requestName = file_get_contents("https://graph.facebook.com/v2.6/<PSID>?fields=first_name,last_name,profile_pic&access_token=<PAGE_ACCESS_TOKEN>";
-    $name = json_decode($requestName);
+//     $requestName = file_get_contents("https://graph.facebook.com/v2.6/<PSID>?fields=first_name,last_name,profile_pic&access_token=<PAGE_ACCESS_TOKEN>";
+//     $name = json_decode($requestName);
 
     $text = $json->result->parameters->text;
-    $username = $name->result->parameters->first_name;
+//     $username = $name->result->parameters->first_name;
 
     switch ($text) {
       case 'hi':
-        $speech = "Hi! Nice to meet you yo " + $username;
+        $speech = "Hi! Nice to meet you yo ";
         break;
 
       case 'bye':
