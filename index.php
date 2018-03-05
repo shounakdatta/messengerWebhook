@@ -7,13 +7,11 @@ if($method == "POST") {
     $requestBody = file_get_contents('php://input');
     $json = json_decode($requestBody);
 
-    curl -X GET "https://graph.facebook.com/v2.6/<PSID>?fields=first_name,last_name,profile_pic&access_token=<PAGE_ACCESS_TOKEN>"
-
     $text = $json->result->parameters->text;
 
     switch ($text) {
       case 'hi':
-        $speech = "Hi! Nice to meet you " + first_name;
+        $speech = "Hi! Nice to meet you yo";
         break;
 
       case 'bye':
