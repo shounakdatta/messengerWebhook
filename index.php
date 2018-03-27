@@ -10,7 +10,7 @@ if($method == "POST") {
 //     $requestName = file_get_contents("https://graph.facebook.com/v2.6/<PSID>?fields=first_name,last_name,profile_pic&access_token=<PAGE_ACCESS_TOKEN>";
 //     $name = json_decode($requestName);
 
-    $text = $json->result->parameters->inputOne;
+    $text = $json->result->parameters->greeting;
 //     $username = $name->result->parameters->first_name;
 
     switch ($text) {
