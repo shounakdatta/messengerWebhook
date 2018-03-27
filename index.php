@@ -15,15 +15,11 @@ if($method == "POST") {
 
     switch ($text) {
       case 'hi':
-        $speech = "Hi! Nice to meet you yo ";
+        $speech = "Hi! Let's not be so informal.";
         break;
 
-      case 'bye':
-        $speech = "Bye! Good night.";
-        break;
-
-      case 'anything':
-        $speech = "Yes, you can type anything here.";
+      case 'hello':
+        $speech = "Hello! We don't have to be so formal.";
         break;
 
       default:
